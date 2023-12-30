@@ -1,0 +1,39 @@
+{
+    "scopes": [
+        {
+            "id": "42CD1B70-666B-4912-A585-1D074923EC35",
+            "name": "scope1"
+        },
+        {
+            "id": "6F459BAB-E3FB-467B-88A6-EB0C5D684C86",
+            "name": "scope2"
+        },
+        {
+            "id": "EC7F96A2-3298-47B9-BC8D-846B17E3709F",
+            "name": "scope3"
+        },
+        {
+            "id": "64039879-FDAB-4ED3-B25B-B20BC0C06125",
+            "name": "scope4"
+        },
+        {
+            "id": "A7ABF8B7-84F6-42D3-AEAE-C24E8B9A13D2",
+            "name": "scope5"
+        }
+    ],
+    "topics": [
+        {
+            "id": "50A01982-E97F-444D-84C9-4BDA873A9638",
+            "name": "Topic1",
+            "scopeId": "42CD1B70-666B-4912-A585-1D074923EC35"
+        },
+        {
+            "id": "CBDB0349-CF98-4024-BE2D-38D5A4D0AAB7",
+            "name": "Topic2"
+        },
+        {
+            "id": "A7388667-18F2-4A2A-A52B-2239539C2EC1",
+            "name": "Topic3"
+        }
+    ]
+}

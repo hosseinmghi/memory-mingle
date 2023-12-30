@@ -1,0 +1,28 @@
+.card {
+    width: 250px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  } 
+
+  .card-header {
+    height: 150px;
+    background-color: #0078d4;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
