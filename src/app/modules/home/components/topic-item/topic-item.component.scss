@@ -1,4 +1,4 @@
-.scope {
+.topic {
     width: 250px;
     margin: 20px;
     background-color: #fff;
@@ -8,14 +8,14 @@
     transition: transform 0.2s ease-in-out;
   }
 
-  .scope:hover {
+  .topic:hover {
     transform: scale(1.05);
     cursor: pointer;
   } 
 
-  .scope-header {
+  .topic-header {
     height: 150px;
-    background-color: #0078d4;
+    background-color: #b8d400;
     color: #fff;
     display: flex;
     align-items: center;

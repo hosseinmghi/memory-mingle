@@ -29,11 +29,13 @@
         },
         {
             "id": "CBDB0349-CF98-4024-BE2D-38D5A4D0AAB7",
-            "name": "Topic2"
+            "name": "Topic2",
+            "scopeId": "42CD1B70-666B-4912-A585-1D074923EC35"
         },
         {
             "id": "A7388667-18F2-4A2A-A52B-2239539C2EC1",
-            "name": "Topic3"
+            "name": "Topic3",
+            "scopeId": "42CD1B70-666B-4912-A585-1D074923EC35"
         }
     ]
 }
