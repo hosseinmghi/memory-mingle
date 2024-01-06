@@ -14,20 +14,22 @@ export class TopicListComponent {
   scopeId: GUID | undefined;
 
   constructor(private topicService: TopicService, private route: ActivatedRoute) {
+  }
+
+  ngOnInit() {
     this.route.paramMap.subscribe(
       params => {
         if (params.get('scopeid') && params.get('scopeid') != null)
           this.scopeId = guid(params.get('scopeid')!);
-      }
-    );
+          this.loadtopics();
+        }
+    )
   }
 
-  ngOnInit() {
-    //this.scopeId = this.route.snapshot.params['scopeid'];
-
+  private loadtopics() {
     if (this.scopeId)
       this.topicService.getTopics(this.scopeId).subscribe(topics => {
         this.topics = topics;
-      })
+      });
   }
 }

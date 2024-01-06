@@ -12,7 +12,6 @@ export class ScopeListComponent {
   scopes: Scope[] | undefined;
 
   constructor(private scopeServie: ScopeService, private router: Router) {
-
   }
 
   ngOnInit() {
@@ -23,6 +22,6 @@ export class ScopeListComponent {
 
   onScopeClick(scope: Scope) {
     if (scope)
-      this.router.navigate(['/topics'], { queryParams: { scopeid: scope.id } })
+      this.router.navigate(['/topics', scope.id])
   }
 }

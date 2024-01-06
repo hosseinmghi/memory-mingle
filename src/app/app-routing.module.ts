@@ -8,7 +8,7 @@ import { TopicListComponent } from './modules/home/components/topic-list/topic-l
 const routes: Routes =   [  
   { path: 'add', component: CardAddComponent },
   { path: 'scopes', component: ScopeListComponent },
-  { path: 'topics', component: TopicListComponent } ,
+  { path: 'topics/:scopeid', component: TopicListComponent } ,
 ];
 
 @NgModule({
