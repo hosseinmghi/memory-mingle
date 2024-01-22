@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { ScopeListComponent } from './modules/home/components/scope-list/scope-l
 import { ScopeItemComponent } from './modules/home/components/scope-item/scope-item.component';
 import { TopicListComponent } from './modules/home/components/topic-list/topic-list.component';
 import { TopicItemComponent } from './modules/home/components/topic-item/topic-item.component';
+import { WordAddComponent } from './modules/home/components/word-add/word-add.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +21,16 @@ import { TopicItemComponent } from './modules/home/components/topic-item/topic-i
     ScopeListComponent,
     ScopeItemComponent,
     TopicListComponent,
-    TopicItemComponent
+    TopicItemComponent,
+    WordAddComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
-    HttpClientModule  
+    HttpClientModule  ,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

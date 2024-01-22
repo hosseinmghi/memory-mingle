@@ -1,3 +1,3 @@
 <div class="topics-container">
-    <app-topic-item *ngFor="let topic of topics" [topic]="topic"></app-topic-item>
+    <app-topic-item *ngFor="let topic of topics" [topic]="topic" (addClick)="onAddClick(topic)"></app-topic-item>
 </div>

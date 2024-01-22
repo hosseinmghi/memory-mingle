@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Topic } from '../../../../core/models/topic';
 
 @Component({
@@ -8,6 +8,16 @@ import { Topic } from '../../../../core/models/topic';
 })
 export class TopicItemComponent {
   @Input() topic: Topic | undefined;
+  @Output() addClick = new EventEmitter();
 
-  
+  constructor() {
+  }
+
+  onAddClick() {
+    this.addClick.emit();
+  };
+
+  onClick(){
+    
+  }
 }
