@@ -1,0 +1,10 @@
+<form (ngSubmit)="onSubmit()">
+    <div>
+        <mat-form-field>
+            <mat-label>Topic</mat-label>
+            <input matInput required [(ngModel)]="topic.name" type="text" [ngModelOptions]="{standalone:true}">
+        </mat-form-field>
+    </div>
+
+    <button type="submit" mat-button>Submit</button>
+</form>

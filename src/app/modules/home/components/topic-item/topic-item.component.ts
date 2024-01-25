@@ -9,6 +9,7 @@ import { Topic } from '../../../../core/models/topic';
 export class TopicItemComponent {
   @Input() topic: Topic | undefined;
   @Output() addClick = new EventEmitter();
+  @Output() listClick = new EventEmitter();
 
   constructor() {
   }
@@ -17,7 +18,7 @@ export class TopicItemComponent {
     this.addClick.emit();
   };
 
-  onClick(){
-    
+  onListClick(){
+    this.listClick.emit();
   }
 }

@@ -36,4 +36,16 @@ export class TopicListComponent {
   onAddClick(topic: Topic) {
     this.router.navigate(["/words/add", topic.id]);
   }
+
+  onListClick(topic: Topic) {
+    this.router.navigate(["/words/list", topic.id]);
+  }
+
+  addNewTopic(topic: Topic) {
+    topic.scopeId = this.scopeId!;
+    if (topic)
+      this.topicService.addTopic(topic).subscribe(() => {
+        this.loadtopics();
+      });
+  }
 }

@@ -13,6 +13,11 @@ import { ScopeItemComponent } from './modules/home/components/scope-item/scope-i
 import { TopicListComponent } from './modules/home/components/topic-list/topic-list.component';
 import { TopicItemComponent } from './modules/home/components/topic-item/topic-item.component';
 import { WordAddComponent } from './modules/home/components/word-add/word-add.component';
+import { TopicAddComponent } from './modules/home/components/topic-add/topic-add.component';
+import { WordListComponent } from './modules/home/components/word-list/word-list.component';
+import { WordListItemComponent } from './modules/home/components/word-list-item/word-list-item.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -22,15 +27,20 @@ import { WordAddComponent } from './modules/home/components/word-add/word-add.co
     ScopeItemComponent,
     TopicListComponent,
     TopicItemComponent,
-    WordAddComponent
+    WordAddComponent,
+    TopicAddComponent,
+    WordListComponent,
+    WordListItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
-    HttpClientModule  ,
-    FormsModule
+    HttpClientModule,
+    FormsModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [
     provideClientHydration()

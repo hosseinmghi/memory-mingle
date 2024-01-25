@@ -15,4 +15,8 @@ export class TopicService {
   getTopics(scopeId: GUID): Observable<Topic[]> {
     return this.httpclient.get<Topic[]>(`${this.apiUrl}?scopeId=${scopeId}`);
   }
+
+  addTopic(topic: Topic): Observable<any> {
+    return this.httpclient.post(`${this.apiUrl}?scopeId=${topic.scopeId}`, topic);
+  }
 }

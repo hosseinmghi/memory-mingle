@@ -1,3 +1,6 @@
+<div>
+    <app-topic-add (onSubmitClick)="addNewTopic($event)"></app-topic-add>
+</div>
 <div class="topics-container">
-    <app-topic-item *ngFor="let topic of topics" [topic]="topic" (addClick)="onAddClick(topic)"></app-topic-item>
+    <app-topic-item *ngFor="let topic of topics" [topic]="topic" (addClick)="onAddClick(topic)" (listClick)="onListClick(topic)"></app-topic-item>
 </div>
